@@ -1,0 +1,24 @@
+﻿<Window x:Class="lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name ="GrdWork">
+        <Canvas x:Name="CnvBack" Background="Beige" RenderTransformOrigin="0.398,0.412" >
+        </Canvas>
+        <Label x:Name ="LblCoordinates" Content="Coordinates" Margin="0,378,555,0" Height="46" VerticalAlignment="Top"/>
+        <Button x:Name ="BtnRect" Content="Ellipse" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Click="BtnRect_Click" OpacityMask="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" BorderBrush="{x:Null}" Width="99"/>
+        <Button x:Name="BtnConect" Content="Connection" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top" Height="35" Width="99" Click="BtnConect_Click"/>
+        <Button x:Name="BtnData" Content="Data" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="99" Margin="0,77,0,0" Click="BtnData_Click"/>
+        <Button x:Name="BtnSpanningTree" Content="SpanningTree" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="99" Margin="0,115,0,0" Click="BtnSpannigTree_Click"/>
+        <Button x:Name="BtnSaveTree" Content="Save Tree" Height="18" VerticalAlignment="Top" HorizontalAlignment="Right" Width="70" Click="BtnSaveTree_Click"  />
+        <Button x:Name="BtnDelete" Content="Delete Vertex" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="99" Margin="0,153,0,0" Click="BtnDelete_Click"/>
+        <Button x:Name="BtnDFS" Content="DFS" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="99" Margin="0,191,0,0" Click="BtnDFS_Click" />
+        <Button x:Name="BtnBFS" Content="BFS" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="99" Margin="0,229,0,0" Click="BtnBFS_Click" />
+        <Button x:Name="BtnDijkstra" Content="Shortest path" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="99" Margin="0,267,0,0" Click="BtnDijkstra_Click" />
+        <Button x:Name="BtnMaxFlow" Content="MaxFlow" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36" Width="99" Margin="0,305,0,0" Click="BtnMaxFlow_Click" />
+    </Grid>
+</Window>
